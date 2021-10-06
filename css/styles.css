@@ -1,0 +1,16 @@
+body {
+  background-color: #eee;
+}
+
+.app-header {
+  display: flex;
+}
+
+.app-navigation {
+  position: absolute;
+  right: 0px;
+}
+
+.app-navigation a {
+  margin-right: 10px;
+}

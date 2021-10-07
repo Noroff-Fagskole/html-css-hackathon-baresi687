@@ -1,3 +1,16 @@
+@font-face {
+  font-family: "Lobster";
+  src: url("../fonts/lobster/lobster-regular.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "Open Sans Condensed";
+  src: url(../fonts/open-sans-condensed/opensanscondensed-bold.ttf)
+      format("truetype"),
+    url("../fonts/open-sans-condensed/opensanscondensed-light.ttf")
+      format("truetype");
+}
+
 body {
   background-color: #eee;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
@@ -7,16 +20,58 @@ body {
   line-height: 1.4;
 }
 
+.app-header {
+  border-bottom: 1px solid #999;
+  padding-bottom: 1em;
+}
+
+.inner {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.app-logo {
+  display: inline-block;
+}
+
+.app-navigation {
+  float: right;
+}
+
+/* Link states = a:link, a:visited, a:active, a:hover */
+.app-navigation a:link {
+  text-decoration: none;
+  color: #444;
+  padding: 0.5em;
+}
+
+.app-navigation a:visited {
+  color: #444;
+}
+
+.app-navigation a:active {
+  color: greenyellow;
+}
+
+.app-navigation a:hover {
+  color: paleturquoise;
+}
+
+.app-logo img {
+  width: 160px;
+}
+
 h1 {
   font-size: 2.5rem;
   margin-bottom: 0;
+  font-family: "Open Sans Condensed";
 }
 
 p {
   font-family: "Open Sans", sans-serif;
 }
 
-.app-header {
+/* .app-header {
   display: flex;
 }
 
@@ -27,4 +82,4 @@ p {
 
 .app-navigation a {
   margin-right: 10px;
-}
+} */

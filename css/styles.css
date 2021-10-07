@@ -1,5 +1,19 @@
 body {
   background-color: #eee;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: #444;
+  font-weight: normal;
+  line-height: 1.4;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0;
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
 }
 
 .app-header {

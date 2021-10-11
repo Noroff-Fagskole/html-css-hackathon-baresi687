@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link
+      href="https://www.noroff.no//images/logo/favicon.png"
+      rel="shortcut icon"
+      type="image/vnd.microsoft.icon"
+    />
+
+    <title>Article page</title>
+  </head>
+
+  <body>
+    <header class="app-header">
+      <div class="inner">
+        <a href="/" class="app-logo">
+          <img src="./img/logo.png" alt="CSS Tricks" />
+        </a>
+        <nav class="app-navigation">
+          <a href="/">
+            <i class="fas fa-home color-red"></i>
+            Home
+          </a>
+          <a href="./about.html">
+            <i class="fas fa-address-card color-red"></i>
+            About
+          </a>
+          <a href="./contact.html">
+            <i class="fas fa-id-card-alt color-red"></i>
+            Contact
+          </a>
+          <a href="./login.html">
+            <i class="fas fa-sign-in-alt color-red"></i>
+            Login
+          </a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section>
+        <div class="inner">
+          <article class="app-article">
+            <header>
+              <h1>Contact</h1>
+            </header>
+            <!-- Forms -->
+            <form action="POST">
+              <fieldset>
+                <legend>Give me your names</legend>
+                <label for="firstName">First Name</label>
+
+                <input
+                  id="first-name"
+                  class="input-text"
+                  type="text"
+                  name="firstName"
+                  placeholder="Enter your first name"
+                />
+
+                <label for="lastName">Last Name</label>
+
+                <input
+                  id="last-name"
+                  class="input-text"
+                  type="text"
+                  name="lastName"
+                  placeholder="Enter your last name"
+                />
+              </fieldset>
+
+              <fieldset>
+                <legend>Give us your contact details</legend>
+                <label for="email"
+                  >Email <span class="color-red">*</span></label
+                >
+
+                <input
+                  id="email"
+                  class="input-text"
+                  type="email"
+                  name="email"
+                  placeholder="Enter your email"
+                />
+
+                <label for="number"
+                  >Phone <span class="color-red">*</span></label
+                >
+
+                <input
+                  id="number"
+                  class="input-text"
+                  name="number"
+                  type="tel"
+                  placeholder="+47 123 45 678"
+                />
+
+                <h2>How should we contact you?</h2>
+                <label for="email">
+                  <input
+                    id="email"
+                    type="radio"
+                    name="contactYou"
+                    value="Email"
+                  />
+                  Email
+                </label>
+
+                <label for="phone">
+                  <input
+                    id="phone"
+                    type="radio"
+                    name="contactYou"
+                    value="Phone"
+                  />
+                  Phone
+                </label>
+              </fieldset>
+
+              <fieldset>
+                <legend>How can we help you?</legend>
+                <label for="message">Message</label>
+
+                <textarea
+                  name="message"
+                  id="message"
+                  class="input-text-area"
+                  cols="30"
+                  rows="10"
+                  placeholder="Your message"
+                ></textarea>
+              </fieldset>
+
+              <fieldset>
+                <legend>Newsletter</legend>
+                <h5>Subscribe to our newsletter?</h5>
+                <label for="newsletter">
+                  <input type="radio" name="newsletter" value="yes" />
+                  Yes
+                </label>
+                <label for="newsletter">
+                  <input type="radio" name="newsletter" value="no" />
+                  No
+                </label>
+                <h5>If yes: Which categories are you interested in?</h5>
+
+                <label for="javascript">
+                  <input
+                    type="checkbox"
+                    name="javascript"
+                    id="javascript"
+                    checked
+                  />
+                  Javascript
+                </label>
+                <label for="html">
+                  <input type="checkbox" name="html" id="html" />
+                  HTML
+                </label>
+                <label for="css">
+                  <input type="checkbox" name="css" id="css" />
+                  CSS
+                </label>
+              </fieldset>
+
+              <input type="submit" value="Submit" />
+            </form>
+          </article>
+          <aside class="app-sidebar">Sidebar</aside>
+        </div>
+      </section>
+
+      <footer>
+        <div class="inner">footer</div>
+      </footer>
+    </main>
+  </body>
+</html>

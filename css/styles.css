@@ -75,6 +75,52 @@ main img {
   width: 160px;
 }
 
+.app-navigation-drawer {
+  /* Hide nav on load */
+  display: block;
+  background: gray;
+  padding: 0.5em;
+  border-bottom: 10px solid green;
+  /* Animate: default state on load */
+  transition: all 0.4s linear;
+  transform: translateY(-150%);
+  list-style: none;
+}
+
+.sr-only {
+  display: none;
+}
+
+#hamburger-menu {
+  /* Hide the checkbox */
+  display: none;
+}
+
+label {
+  cursor: pointer;
+}
+
+#hamburger-menu:checked ~ .app-navigation-drawer {
+  /* Show nav :checked */
+  display: block;
+  transform: translate(0px);
+}
+/* Media queries with responsive inline columns */
+@media screen and (min-width: 767px) {
+  .app-article {
+    display: inline-block;
+    border: 1px solid red;
+    width: 60%;
+  }
+
+  .app-sidebar {
+    display: inline-block;
+    border: 1px solid red;
+    width: 35%;
+    vertical-align: top;
+  }
+}
+
 h1 {
   font-size: 2.5rem;
   margin-bottom: 0;
